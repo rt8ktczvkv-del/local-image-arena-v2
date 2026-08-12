@@ -1,28 +1,22 @@
-# Local Image Arena – Root Only
+# Local Image Arena – vollständiges Root-Paket
 
-Dieses ZIP enthält **keine Unterordner**.
-
-Direkt ins neue GitHub-Repository hochladen:
+Im ZIP sind nur Dateien im Hauptordner:
 - index.html
 - main.js
 - package.json
 - vite.config.js
 - copy-ort-assets.cjs
 - WORKFLOW-INHALT.txt
+- README.txt
+
+Nach dem Upload musst du auf GitHub einmal diese Datei anlegen:
+.github/workflows/pages.yml
+
+Dazu den kompletten Inhalt aus WORKFLOW-INHALT.txt hineinkopieren.
+
+Danach:
+Settings → Pages → Source → GitHub Actions
 
 Wichtig:
-GitHub Actions selbst verlangt technisch die Datei:
-`.github/workflows/pages.yml`
-
-Da du keine Unterordner hochladen möchtest, ist der Workflow als
-`WORKFLOW-INHALT.txt` beigelegt.
-
-Nach dem Upload:
-1. GitHub → Add file → Create new file
-2. Dateiname: `.github/workflows/pages.yml`
-3. Inhalt aus `WORKFLOW-INHALT.txt` komplett hineinkopieren
-4. Commit changes
-5. Settings → Pages → Source → GitHub Actions
-
-Damit bleibt dein Upload-Paket komplett flach; nur GitHub selbst benötigt
-für Actions diese eine Workflow-Datei an seinem vorgeschriebenen Pfad.
+GitHub Actions selbst verlangt technisch den Unterordner .github/workflows.
+Der Rest des Projekts bleibt komplett im Hauptordner.
