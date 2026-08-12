@@ -1,0 +1,18 @@
+{
+  "name": "local-image-arena-iphone",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prebuild": "node copy-ort-assets.cjs",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "web-txt2img": "0.3.1",
+    "onnxruntime-web": "^1.18.0",
+    "@xenova/transformers": "latest"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
